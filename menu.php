@@ -12,7 +12,7 @@
 			Identificador: <input type="text" name="usr" required><br>
 			Unitat organitzativa: <input type="text" name="ou" required><br>
 			<input type="submit" value="Buscar">
-			<input type="reset" value="Esborrar">
+			<input type="reset" value="Reset">
 		</form>
 		
 		<h2>Afegir un usuari</h2>
@@ -36,9 +36,16 @@
     			Descripció: <input type="text" name="descripcio" required><br>
     		</div>
 			<input type="submit" value="Afegir">
-			<input type="reset" value="Esborrar">
+			<input type="reset" value="Reset">
 		</form>
 		
+		<h2>Esborrar un usuari</h2>
+		<form action="http://zend-arclca.fjeclot.net/projecte/esborrar.php" method="POST">
+			Identificador: <input type="text" name="usr" required><br>
+			Unitat organitzativa: <input type="text" name="ou" required><br>
+			<input type="submit" value="Esborrar">
+			<input type="reset" value="Reset">
+		</form>
 		<a href="http://zend-arclca.fjeclot.net/projecte/index.php">Tancar Sessió</a>
 	</body>
 </html>
