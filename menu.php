@@ -46,6 +46,47 @@
 			<input type="submit" value="Esborrar">
 			<input type="reset" value="Reset">
 		</form>
+		
+		<h2>Modificar un usuari</h2>
+		<form action="http://zend-arclca.fjeclot.net/projecte/modificar.php" method="POST">
+			<h3>Usuari a modificar: </h3>
+			Identificador: <input type="text" name="usr" required><br>
+			Unitat organitzativa: <input type="text" name="ou" required><br>
+		
+			<h3>Camp a modificar: </h3>
+			
+			<input type="radio" name="camp" value="uidNumber" checked>
+			Número Id <br>
+			<input type="radio" name="camp" value="gidNumber">
+			Id Grup <br>
+			<input type="radio" name="camp" value="homeDirectory">
+			Directori personal <br>
+		
+			<input type="radio" name="camp" value="loginShell">
+			Shell <br>
+			<input type="radio" name="camp" value="cn">
+			CN <br>
+			<input type="radio" name="camp" value="sn">
+			SN <br>
+		
+			<input type="radio" name="camp" value="givenName">
+			Nom <br>
+			<input type="radio" name="camp" value="postalAddress">
+			Adreça postal <br>
+			<input type="radio" name="camp" value="mobile">
+			Mòbil <br>
+		
+			<input type="radio" name="camp" value="telephoneNumber">
+			Telèfon <br>
+			<input type="radio" name="camp" value="title">
+			Títol <br>
+			<input type="radio" name="camp" value="description">
+			Descripció <br>
+			
+			Nou valor: <input type="text" name="valor" required> <br>
+			<input type="submit" value="Modificar">
+			<input type="reset" value="Reset">
+		</form>
 		<a href="http://zend-arclca.fjeclot.net/projecte/index.php">Tancar Sessió</a>
 	</body>
 </html>

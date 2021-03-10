@@ -48,9 +48,11 @@ Attribute::setAttribute($nova_entrada, 'telephoneNumber', $telefon);
 Attribute::setAttribute($nova_entrada, 'title', $titol);
 Attribute::setAttribute($nova_entrada, 'description', $descripcio);
 $dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
-if($ldap->add($dn, $nova_entrada)) {
+
+try {
+    $ldap->add($dn, $nova_entrada);
     echo "Usuari creat";
-} else {
+} catch(Exception $e) {
     echo "No s'ha pogut crear l'usuari";
 }
 ?>
